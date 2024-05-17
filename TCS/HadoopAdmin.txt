@@ -1,0 +1,25 @@
+1. What is Journal Nodes?
+2. What is checkpointing?   
+3. Use of fsck command.  
+4. What is **`distcp`**
+→ Hadoop is a command-line tool used to copy large amounts of data efficiently between Hadoop Distributed File System (HDFS) clusters or between different directories within the same HDFS cluster
+5. How we can change the replication factor for a particular file in HDFS. 
+→ `hadoop fs -df.replication=5 -put file_name`
+6. What is RPC Latency? 
+7. How to create a workspace and set quota. 
+→  `hadoop fs -mkdir /workspace/nilanjan`
+→ `hdfs dfsadmin -setQuota 100gb /workspae/nilanjan`
+8. What is data redundancy? ``
+9. Yarn Architecture
+10. Rack Awareness
+→ This is all about how we can keep the file blocks in the different racks
+11. Do we store anything in database regarding FS Image and Edit logs. 
+12. How to deal with the out of memory issue in bigdata jobs. 
+    1. `uname -i`  → Linux kernel restricts you to submit jobs. 
+    2. Spark Memory issue.  
+13. How to reset the password for Cloudera Manager
+    1. `UPDATE USERS SET password_hash = '9f7e3270b1aaa4931d38845a0334e66b2dd93f916439006fac4e5e2535a444b3', password_salt = -5357030608435271136 WHERE user_name = 'guy';`
+14. What are the information FS image contains. 
+    1. **File Metadata**
+    2. Block Information
+    3. Replication factor
